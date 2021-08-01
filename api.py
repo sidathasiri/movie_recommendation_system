@@ -4,7 +4,7 @@ from prepare_data import get_prepare_data
 from user_rated_movies import get_latest_rated_movie
 import pandas as pd
 
-[X, output] = get_prepare_data()
+[X, output, movie_genre_processed] = get_prepare_data()
 
 from sklearn.metrics.pairwise import cosine_similarity
 similarities = cosine_similarity(X) 

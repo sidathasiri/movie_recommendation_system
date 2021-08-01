@@ -37,4 +37,4 @@ def get_prepare_data():
 
     output = movie_genre_processed.loc[:,['title', "imdbID"]]
     output = output.join(pd.DataFrame(X))
-    return [X, output]
+    return [X, output, movie_genre_processed]
